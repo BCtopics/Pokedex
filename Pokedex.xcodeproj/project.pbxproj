@@ -14,6 +14,7 @@
 		6B7133D31E9D31B600A8D6AD /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7133D21E9D31B600A8D6AD /* NetworkController.swift */; };
 		6B7133D81E9D356B00A8D6AD /* PokemonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7133D71E9D356B00A8D6AD /* PokemonViewController.swift */; };
 		6B7133DB1E9D35F600A8D6AD /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7133DA1E9D35F600A8D6AD /* Pokemon.swift */; };
+		6B7133DE1E9D3AF300A8D6AD /* PokemonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7133DD1E9D3AF300A8D6AD /* PokemonController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		6B7133D21E9D31B600A8D6AD /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 		6B7133D71E9D356B00A8D6AD /* PokemonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonViewController.swift; sourceTree = "<group>"; };
 		6B7133DA1E9D35F600A8D6AD /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		6B7133DD1E9D3AF300A8D6AD /* PokemonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				6B7133BE1E9D29AB00A8D6AD /* AppDelegate.swift */,
+				6B7133DC1E9D3ADE00A8D6AD /* ModelControllers */,
 				6B7133D91E9D35E800A8D6AD /* Models */,
 				6B7133D41E9D31BB00A8D6AD /* Networking */,
 				6B7133D11E9D2BA600A8D6AD /* ViewControllers */,
@@ -100,6 +103,14 @@
 				6B7133DA1E9D35F600A8D6AD /* Pokemon.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		6B7133DC1E9D3ADE00A8D6AD /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6B7133DD1E9D3AF300A8D6AD /* PokemonController.swift */,
+			);
+			name = ModelControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +190,7 @@
 				6B7133DB1E9D35F600A8D6AD /* Pokemon.swift in Sources */,
 				6B7133BF1E9D29AB00A8D6AD /* AppDelegate.swift in Sources */,
 				6B7133D81E9D356B00A8D6AD /* PokemonViewController.swift in Sources */,
+				6B7133DE1E9D3AF300A8D6AD /* PokemonController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
