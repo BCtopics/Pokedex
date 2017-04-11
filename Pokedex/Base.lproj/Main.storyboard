@@ -1,11 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="CB3-Xl-aaN">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Pokemon View Controller-->
+        <scene sceneID="42W-RU-082">
+            <objects>
+                <viewController id="CB3-Xl-aaN" customClass="PokemonViewController" customModule="Pokedex" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fLf-uc-Qhx"/>
+                        <viewControllerLayoutGuide type="bottom" id="FJn-PN-8MO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="amP-YP-wjW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="tHI-g8-n3C">
+                                <rect key="frame" x="38" y="164" width="300" height="101.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WNE-nm-5Ju">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8aY-7N-cEb">
+                                        <rect key="frame" x="0.0" y="40.5" width="300" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Abilities" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Paf-Rg-bV4">
+                                        <rect key="frame" x="0.0" y="81" width="300" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="8aY-7N-cEb" firstAttribute="centerX" secondItem="tHI-g8-n3C" secondAttribute="centerX" id="9bT-so-zXG"/>
+                                    <constraint firstAttribute="width" constant="300" id="D8K-zJ-Mya"/>
+                                    <constraint firstItem="Paf-Rg-bV4" firstAttribute="centerX" secondItem="tHI-g8-n3C" secondAttribute="centerX" id="P9b-vH-kgP"/>
+                                    <constraint firstItem="WNE-nm-5Ju" firstAttribute="centerX" secondItem="tHI-g8-n3C" secondAttribute="centerX" id="akM-lg-99i"/>
+                                </constraints>
+                            </stackView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="meQ-S2-oOC">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="meQ-S2-oOC" firstAttribute="top" secondItem="fLf-uc-Qhx" secondAttribute="bottom" id="5Wt-Tc-mNR"/>
+                            <constraint firstAttribute="trailing" secondItem="meQ-S2-oOC" secondAttribute="trailing" id="Rwr-bf-fxE"/>
+                            <constraint firstItem="meQ-S2-oOC" firstAttribute="leading" secondItem="amP-YP-wjW" secondAttribute="leading" id="iyo-8U-c3R"/>
+                            <constraint firstItem="tHI-g8-n3C" firstAttribute="centerX" secondItem="amP-YP-wjW" secondAttribute="centerX" id="kEQ-Fe-qgL"/>
+                            <constraint firstItem="tHI-g8-n3C" firstAttribute="top" secondItem="meQ-S2-oOC" secondAttribute="bottom" constant="100" id="oWS-VX-zzC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="abilitiesLabel" destination="Paf-Rg-bV4" id="DX0-4T-cNu"/>
+                        <outlet property="idLabel" destination="8aY-7N-cEb" id="3f4-gP-mGq"/>
+                        <outlet property="nameLabel" destination="WNE-nm-5Ju" id="hB4-aI-iKS"/>
+                        <outlet property="searchBar" destination="meQ-S2-oOC" id="bIt-MY-oLo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5jk-wT-lyi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="114.40000000000001" y="135.38230884557723"/>
+        </scene>
+    </scenes>
 </document>
